@@ -1,0 +1,354 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 260" width="100%" height="100%">
+  <defs>
+    <!-- Dark Sci-Fi Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913"/>
+      <stop offset="50%" stop-color="#0c1222"/>
+      <stop offset="100%" stop-color="#141a33"/>
+    </linearGradient>
+
+    <!-- Mecha Gold / Amber Eye Gradient -->
+    <linearGradient id="eyeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="40%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <!-- Red Sensor Gradient -->
+    <linearGradient id="redSensor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f87171"/>
+      <stop offset="100%" stop-color="#dc2626"/>
+    </linearGradient>
+
+    <!-- Mecha Metal Shading Gradients -->
+    <linearGradient id="armorLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <linearGradient id="armorDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+
+    <!-- Grid / Laser Gradient -->
+    <linearGradient id="gridGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.7"/>
+      <stop offset="70%" stop-color="#3b82f6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Progress Bar Gradient (Animated) -->
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="200%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff">
+        <animate attributeName="stop-color" values="#00f0ff;#f59e0b;#ec4899;#00f0ff" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#f59e0b">
+        <animate attributeName="stop-color" values="#f59e0b;#ec4899;#00f0ff;#f59e0b" dur="4s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#ec4899">
+        <animate attributeName="stop-color" values="#ec4899;#00f0ff;#f59e0b;#ec4899" dur="4s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+
+    <!-- Laser Sweep Shimmer -->
+    <linearGradient id="laserSweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-920,0" to="920,0" dur="4s" repeatCount="indefinite" />
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="eyeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="blur1" />
+      <feGaussianBlur stdDeviation="8" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur2" />
+        <feMergeNode in="blur1" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="cyanGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#00f0ff" flood-opacity="0.85"/>
+    </filter>
+
+    <filter id="redGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#ef4444" flood-opacity="0.9"/>
+    </filter>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&amp;family=Share+Tech+Mono&amp;display=swap');
+
+      /* Head Float Motion */
+      @keyframes gundamFloat {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-7px) rotate(0.4deg); }
+      }
+
+      /* Eye Ignition Boot Glow */
+      @keyframes eyeIgnition {
+        0%, 100% { opacity: 0.85; filter: drop-shadow(0 0 5px #fbbf24) drop-shadow(0 0 12px #f59e0b); }
+        50% { opacity: 1; filter: drop-shadow(0 0 9px #fffbeb) drop-shadow(0 0 22px #f59e0b) drop-shadow(0 0 35px #f59e0b); }
+      }
+
+      /* HUD Reticle Rotate */
+      @keyframes hudSpinCw {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes hudSpinCcw {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
+      }
+
+      /* Moving Grid */
+      @keyframes scanGrid {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(22px); }
+      }
+
+      .gundam-head-unit {
+        animation: gundamFloat 4.5s ease-in-out infinite;
+      }
+
+      .gundam-eye {
+        animation: eyeIgnition 2.5s ease-in-out infinite;
+      }
+
+      .hud-outer-ring {
+        animation: hudSpinCw 20s linear infinite;
+        transform-origin: 750px 125px;
+      }
+      .hud-inner-ring {
+        animation: hudSpinCcw 14s linear infinite;
+        transform-origin: 750px 125px;
+      }
+
+      .moving-grid {
+        animation: scanGrid 1.2s linear infinite;
+      }
+
+      .title {
+        font-family: 'Orbitron', monospace, sans-serif;
+        font-size: 38px;
+        font-weight: 900;
+        letter-spacing: 5px;
+        fill: #f8fafc;
+      }
+
+      .title-glow {
+        animation: titlePulse 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes titlePulse {
+        0% { filter: drop-shadow(0 0 4px #00f0ff); fill: #f1f5f9; }
+        50% { filter: drop-shadow(0 0 14px #00f0ff) drop-shadow(0 0 25px #0284c7); fill: #ffffff; }
+        100% { filter: drop-shadow(0 0 4px #00f0ff); fill: #f1f5f9; }
+      }
+
+      .sub {
+        font-family: 'Orbitron', monospace;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        fill: #00f0ff;
+      }
+
+      .tags {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 13px;
+        letter-spacing: 2px;
+        fill: #f59e0b;
+        font-weight: 600;
+      }
+
+      .meta {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 11px;
+        letter-spacing: 1.5px;
+        fill: #94a3b8;
+      }
+
+      .bar-text {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 10px;
+        letter-spacing: 1px;
+        fill: #94a3b8;
+      }
+
+      @keyframes radarBlink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.25; }
+      }
+      .blink-dot {
+        animation: radarBlink 1.2s infinite ease-in-out;
+      }
+    </style>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="920" height="260" rx="12" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.8"/>
+
+  <!-- Perspective 3D Grid at Bottom -->
+  <g opacity="0.85">
+    <clipPath id="gridClip">
+      <rect x="0" y="165" width="920" height="95"/>
+    </clipPath>
+    <g clip-path="url(#gridClip)">
+      <g class="moving-grid">
+        <line x1="0" y1="150" x2="920" y2="150" stroke="url(#gridGrad)" stroke-width="1"/>
+        <line x1="0" y1="172" x2="920" y2="172" stroke="url(#gridGrad)" stroke-width="1.2"/>
+        <line x1="0" y1="194" x2="920" y2="194" stroke="url(#gridGrad)" stroke-width="1.5"/>
+        <line x1="0" y1="216" x2="920" y2="216" stroke="url(#gridGrad)" stroke-width="1.8"/>
+        <line x1="0" y1="238" x2="920" y2="238" stroke="url(#gridGrad)" stroke-width="2.2"/>
+        <line x1="0" y1="260" x2="920" y2="260" stroke="url(#gridGrad)" stroke-width="2.6"/>
+      </g>
+    </g>
+    <!-- Horizon Line -->
+    <line x1="25" y1="165" x2="895" y2="165" stroke="#00f0ff" stroke-width="1" opacity="0.6"/>
+    <!-- Perspective Rays -->
+    <line x1="460" y1="165" x2="-80" y2="260" stroke="url(#gridGrad)" stroke-width="1.2"/>
+    <line x1="460" y1="165" x2="100" y2="260" stroke="url(#gridGrad)" stroke-width="1.2"/>
+    <line x1="460" y1="165" x2="250" y2="260" stroke="url(#gridGrad)" stroke-width="1.2"/>
+    <line x1="460" y1="165" x2="380" y2="260" stroke="url(#gridGrad)" stroke-width="1.2"/>
+    <line x1="460" y1="165" x2="540" y2="260" stroke="url(#gridGrad)" stroke-width="1.2"/>
+    <line x1="460" y1="165" x2="670" y2="260" stroke="url(#gridGrad)" stroke-width="1.2"/>
+    <line x1="460" y1="165" x2="820" y2="260" stroke="url(#gridGrad)" stroke-width="1.2"/>
+    <line x1="460" y1="165" x2="1000" y2="260" stroke="url(#gridGrad)" stroke-width="1.2"/>
+  </g>
+
+  <!-- Top Metadata Bar -->
+  <g class="meta">
+    <text x="45" y="42">[ <tspan fill="#10b981" class="blink-dot">● SYSTEM: AWAKENED</tspan> ]</text>
+    <text x="450" y="42">MECHA UNIT: RX-78-2 GUNDAM</text>
+    <text x="875" y="42" text-anchor="end">LOC: VIET NAM · DUY NHAT</text>
+  </g>
+
+  <!-- Cyberpunk Frame Corners [ ... ] -->
+  <g stroke="#00f0ff" stroke-width="2.5" stroke-linecap="round" fill="none" filter="url(#cyanGlow)">
+    <path d="M 45 35 L 28 35 L 28 65"/>
+    <path d="M 875 35 L 892 35 L 892 65"/>
+    <path d="M 45 230 L 28 230 L 28 200"/>
+    <path d="M 875 230 L 892 230 L 892 200"/>
+  </g>
+
+  <!-- Main Center Header Info -->
+  <g transform="translate(50, 0)">
+    <text x="0" y="102" class="title title-glow">DUYNHAT</text>
+    <text x="2" y="128" class="sub" filter="url(#cyanGlow)">// RX-78-2 SYSTEM ONLINE</text>
+    <text x="2" y="150" class="tags">CREATIVE DEVELOPER · MECHA UI ENGINEER · 3D WEB</text>
+  </g>
+
+  <!-- Bottom Boot Sequence & Stats Bar -->
+  <g transform="translate(48, 204)">
+    <text x="0" y="0" class="bar-text">BOOT SEQUENCE</text>
+    <!-- Progress Bar Track -->
+    <rect x="100" y="-8" width="220" height="8" rx="4" fill="#1e293b"/>
+    <!-- Animated Color Cycling Bar -->
+    <rect x="100" y="-8" width="220" height="8" rx="4" fill="url(#barGrad)"/>
+    <!-- Status Text -->
+    <text x="330" y="0" class="bar-text" fill="#10b981" font-weight="bold">100% · READY_
+      <animate attributeName="opacity" values="1;0.4;1" dur="1s" repeatCount="indefinite" />
+    </text>
+    <!-- Live Stats -->
+    <text x="560" y="0" class="bar-text">STREAK 40D · 3.8K CONTRIB · 107 REPOS</text>
+  </g>
+
+  <!-- ======================================================== -->
+  <!-- GUNDAM RX-78-2 HEAD UNIT (RIGHT WING)                    -->
+  <!-- ======================================================== -->
+  <g id="gundamSection" transform="translate(0, 0)">
+    
+    <!-- Holographic Targeting Radar (Rotating Rings) -->
+    <g class="hud-outer-ring" stroke="#00f0ff" stroke-width="1.2" fill="none" opacity="0.4" stroke-dasharray="14 8 4 8">
+      <circle cx="750" cy="125" r="95"/>
+    </g>
+    <g class="hud-inner-ring" stroke="#f59e0b" stroke-width="1.4" fill="none" opacity="0.55" stroke-dasharray="25 15 5 15">
+      <circle cx="750" cy="125" r="82"/>
+      <!-- Crosshairs -->
+      <line x1="655" y1="125" x2="675" y2="125" stroke="#00f0ff" stroke-width="2"/>
+      <line x1="825" y1="125" x2="845" y2="125" stroke="#00f0ff" stroke-width="2"/>
+      <line x1="750" y1="30" x2="750" y2="50" stroke="#00f0ff" stroke-width="2"/>
+      <line x1="750" y1="200" x2="750" y2="220" stroke="#00f0ff" stroke-width="2"/>
+    </g>
+
+    <!-- FLOATING GUNDAM HEAD -->
+    <g class="gundam-head-unit" transform="translate(750, 125)">
+      
+      <!-- Head Base Stand / Neck -->
+      <path d="M -18 70 L 18 70 L 14 55 L -14 55 Z" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+      <path d="M -26 75 L 26 75 L 20 70 L -20 70 Z" fill="#0f172a" stroke="#00f0ff" stroke-width="1" opacity="0.8"/>
+
+      <!-- Helmet Back & Cheeks (Armor Shading) -->
+      <!-- Helmet Outer Silhouette -->
+      <path d="M -48 -25 L -40 -60 L -15 -75 L 15 -75 L 40 -60 L 48 -25 L 45 35 L 30 55 L -30 55 L -45 35 Z" 
+            fill="url(#armorLight)" stroke="#334155" stroke-width="2"/>
+
+      <!-- Dark Ear / Cheeks Vents (Left & Right) -->
+      <!-- Left Ear Pod -->
+      <path d="M -50 -20 L -42 -20 L -42 25 L -52 15 Z" fill="#334155" stroke="#475569" stroke-width="1"/>
+      <line x1="-48" y1="-10" x2="-44" y2="-10" stroke="#0f172a" stroke-width="1.5"/>
+      <line x1="-48" y1="0" x2="-44" y2="0" stroke="#0f172a" stroke-width="1.5"/>
+      <line x1="-48" y1="10" x2="-44" y2="10" stroke="#0f172a" stroke-width="1.5"/>
+
+      <!-- Right Ear Pod -->
+      <path d="M 50 -20 L 42 -20 L 42 25 L 52 15 Z" fill="#334155" stroke="#475569" stroke-width="1"/>
+      <line x1="48" y1="-10" x2="44" y2="-10" stroke="#0f172a" stroke-width="1.5"/>
+      <line x1="48" y1="0" x2="44" y2="0" stroke="#0f172a" stroke-width="1.5"/>
+      <line x1="48" y1="10" x2="44" y2="10" stroke="#0f172a" stroke-width="1.5"/>
+
+      <!-- Faceplate Mask (White) -->
+      <path d="M -26 -15 L 26 -15 L 24 25 L 16 42 L -16 42 L -24 25 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+      
+      <!-- Cheek Slits (Black Double Air Vents) -->
+      <polygon points="-16,18 -8,18 -9,22 -17,22" fill="#0f172a"/>
+      <polygon points="-15,26 -8,26 -9,30 -16,30" fill="#0f172a"/>
+      <polygon points="16,18 8,18 9,22 17,22" fill="#0f172a"/>
+      <polygon points="15,26 8,26 9,30 16,30" fill="#0f172a"/>
+
+      <!-- Red Chin Piece (Iconic RX-78) -->
+      <polygon points="-8,40 8,40 6,56 -6,56" fill="url(#redSensor)" stroke="#b91c1c" stroke-width="1.2"/>
+
+      <!-- EYE SECTION (Black Eye Socket + Glowing Amber Eyes) -->
+      <polygon points="-22,-8 22,-8 20,8 -20,8" fill="#050811"/>
+      
+      <!-- Glowing Amber Eyes (LEFT & RIGHT) with Eye Glow Filter -->
+      <!-- Left Eye -->
+      <polygon points="-19,-3 -4,-3 -6,4 -17,4" fill="url(#eyeGrad)" class="gundam-eye" filter="url(#eyeGlow)"/>
+      <!-- Right Eye -->
+      <polygon points="4,-3 19,-3 17,4 6,4" fill="url(#eyeGrad)" class="gundam-eye" filter="url(#eyeGlow)"/>
+
+      <!-- Forehead Mecha Camera / Main Sensor (Red Glowing) -->
+      <polygon points="-9,-56 9,-56 12,-40 -12,-40" fill="url(#redSensor)" stroke="#ef4444" stroke-width="1.5" filter="url(#redGlow)"/>
+      <rect x="-4" y="-52" width="8" height="8" fill="#fee2e2" opacity="0.75"/>
+
+      <!-- Red Center Pentagonal Crest (Holds the V-Fin) -->
+      <polygon points="0,-25 15,-40 10,-55 -10,-55 -15,-40" fill="url(#redSensor)" stroke="#991b1b" stroke-width="1.5"/>
+
+      <!-- ======================================================== -->
+      <!-- ICONIC WHITE V-FIN ANTENNA                               -->
+      <!-- ======================================================== -->
+      <!-- Left Main Blade -->
+      <polygon points="-10,-45 -95,-88 -20,-38" fill="url(#armorLight)" stroke="#cbd5e1" stroke-width="1.5"/>
+      <polygon points="-20,-38 -95,-88 -88,-86 -14,-36" fill="url(#armorDark)"/>
+
+      <!-- Right Main Blade -->
+      <polygon points="10,-45 95,-88 20,-38" fill="url(#armorLight)" stroke="#cbd5e1" stroke-width="1.5"/>
+      <polygon points="20,-38 95,-88 88,-86 14,-36" fill="url(#armorDark)"/>
+
+      <!-- Center Yellow/Gold V-fin Accent -->
+      <polygon points="0,-48 -22,-62 -14,-38 0,-34" fill="#f59e0b" stroke="#d97706" stroke-width="1"/>
+      <polygon points="0,-48 22,-62 14,-38 0,-34" fill="#fbbf24" stroke="#d97706" stroke-width="1"/>
+
+      <!-- Cyberpunk Hologram Label under Gundam -->
+      <text x="0" y="88" font-family="'Orbitron', monospace" font-size="9" fill="#00f0ff" text-anchor="middle" letter-spacing="2" filter="url(#cyanGlow)">
+        [ RX-78-2 // ACTIVE ]
+      </text>
+    </g>
+  </g>
+
+  <!-- Laser Sweep Shimmer Effect Across Banner -->
+  <rect x="0" y="0" width="920" height="260" rx="12" fill="url(#laserSweep)" pointer-events="none"/>
+</svg>
+
