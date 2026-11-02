@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="./banner-animated.svg" alt="Cyberpunk Animated Banner" width="100%">
+  <img src="./banner-gundam.svg" alt="RX-78-2 Gundam Animated Banner" width="100%">
 </p>
 <p align="center">
-  <code>$ whoami → Creative Developer / UI/UX Designer _</code>
+  <code>$ rx78-2 --mode: AWAKENED · Creative Developer / Mecha UI Engineer _</code>
 </p>
 ---
 ### 🧬 &gt; whoami
