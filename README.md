@@ -1,4 +1,11 @@
-## Hi there 👋
+<p align="center">
+  <img src="./banner-animated.svg" alt="Cyberpunk Animated Banner" width="100%">
+</p>
+<p align="center">
+  <code>$ whoami → Creative Developer / UI/UX Designer _</code>
+</p>
+---
+### 🧬 &gt; whoami
 
 <!--
 **nguyenduynha/nguyenduynha** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
