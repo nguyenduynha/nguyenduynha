@@ -11,5 +11,5 @@
 ### 🧬 > whoami
 
 <div align="center">
-  <img src="./gemini-svg%20(1).svg" alt="Synthwave Banner" width="100%" />
+  <img src="./gemini-svg(1).svg" alt="Synthwave Banner" width="100%" />
 </div>
