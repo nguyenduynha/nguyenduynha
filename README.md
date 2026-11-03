@@ -7,6 +7,9 @@
 ---
 ### 🧬 &gt; whoami
 
+<div align="center">
+  <img src="./synthwave-header.svg" alt="Synthwave Banner" width="100%" />
+</div>
 <!--
 **nguyenduynha/nguyenduynha** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
