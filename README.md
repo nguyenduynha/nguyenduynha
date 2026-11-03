@@ -10,6 +10,6 @@
 
 ### 🧬 > whoami
 
-<div align="center">
-  <img src="./gemini-svg(1).svg" alt="Synthwave Banner" width="100%" />
-</div>
+<p align="center">
+  <img src="./synthwave-header.svg" alt="Synthwave Banner" width="100%">
+</p>
