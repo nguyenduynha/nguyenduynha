@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" width="100%" height="100%">
   <defs>
     <!-- Background Gradient -->
@@ -36,17 +37,17 @@
     <!-- Nhánh Frontend 2 (Từ Tailwind/HTML/CSS chạy VÀO Core) -->
     <path id="in-fe-2" d="M 150 220 L 430 220 L 430 230 L 470 230" fill="none" />
     
-    <!-- Nhánh Motion & 3D (Từ GSAP/Three.js chạy VÀO Core) -->
+    <!-- Nhánh Motion &amp; 3D (Từ GSAP/Three.js chạy VÀO Core) -->
     <path id="in-motion" d="M 180 320 L 430 320 L 430 250 L 470 250" fill="none" />
     
-    <!-- Nhánh Backend & Data 1 (Từ Supabase/Java chạy VÀO Core) -->
+    <!-- Nhánh Backend &amp; Data 1 (Từ Supabase/Java chạy VÀO Core) -->
     <path id="in-be-1" d="M 980 130 L 670 130 L 670 230 L 630 230" fill="none" />
-    <!-- Nhánh Backend & Data 2 (Từ Postgres/Docker chạy VÀO Core) -->
+    <!-- Nhánh Backend &amp; Data 2 (Từ Postgres/Docker chạy VÀO Core) -->
     <path id="in-be-2" d="M 980 170 L 760 170 L 760 230 L 670 230 L 630 230" fill="none" />
     
-    <!-- Nhánh Tools & Deploy 1 (Từ Arduino/Vercel chạy VÀO Core) -->
+    <!-- Nhánh Tools &amp; Deploy 1 (Từ Arduino/Vercel chạy VÀO Core) -->
     <path id="in-tools-1" d="M 970 370 L 670 370 L 670 250 L 630 250" fill="none" />
-    <!-- Nhánh Tools & Deploy 2 (Từ Git/GitHub/Figma chạy VÀO Core) -->
+    <!-- Nhánh Tools &amp; Deploy 2 (Từ Git/GitHub/Figma chạy VÀO Core) -->
     <path id="in-tools-2" d="M 920 270 L 670 270 L 670 250 L 630 250" fill="none" />
 
     <style>
@@ -83,13 +84,13 @@
     <line x1="235" y1="220" x2="235" y2="200" stroke="#007799" stroke-width="1.5" />
     <line x1="320" y1="220" x2="320" y2="200" stroke="#007799" stroke-width="1.5" />
 
-    <!-- 2. Motion & 3D (Magenta) -->
+    <!-- 2. Motion &amp; 3D (Magenta) -->
     <path d="M 470 250 L 430 250 L 430 320 L 180 320" fill="none" stroke="#5b1166" stroke-width="2" />
     <line x1="180" y1="320" x2="180" y2="345" stroke="#871a99" stroke-width="1.5" />
     <line x1="270" y1="320" x2="270" y2="345" stroke="#871a99" stroke-width="1.5" />
     <line x1="360" y1="320" x2="360" y2="345" stroke="#871a99" stroke-width="1.5" />
 
-    <!-- 3. Backend & Data (Lime Yellow) -->
+    <!-- 3. Backend &amp; Data (Lime Yellow) -->
     <path d="M 630 230 L 670 230 L 670 130 L 980 130" fill="none" stroke="#48610a" stroke-width="2" />
     <path d="M 670 230 L 760 230 L 760 170 L 980 170" fill="none" stroke="#48610a" stroke-width="2" />
     <line x1="740" y1="130" x2="740" y2="105" stroke="#688c0f" stroke-width="1.5" />
@@ -99,7 +100,7 @@
     <line x1="880" y1="170" x2="880" y2="195" stroke="#688c0f" stroke-width="1.5" />
     <line x1="970" y1="170" x2="970" y2="195" stroke="#688c0f" stroke-width="1.5" />
 
-    <!-- 4. Tools & Deploy (White/Cyan) -->
+    <!-- 4. Tools &amp; Deploy (White/Cyan) -->
     <path d="M 630 250 L 670 250 L 670 370 L 970 370" fill="none" stroke="#4d5f73" stroke-width="2" />
     <path d="M 670 270 L 920 270" fill="none" stroke="#4d5f73" stroke-width="2" />
     <line x1="740" y1="270" x2="740" y2="295" stroke="#6a829e" stroke-width="1.5" />
@@ -131,7 +132,7 @@
       </animateMotion>
     </circle>
 
-    <!-- 2. Hạt từ Motion & 3D chạy vào Core (Magenta) -->
+    <!-- 2. Hạt từ Motion &amp; 3D chạy vào Core (Magenta) -->
     <circle r="4.5" fill="#e02bf8">
       <animateMotion dur="2.4s" repeatCount="indefinite">
         <mpath href="#in-motion" />
@@ -143,7 +144,7 @@
       </animateMotion>
     </circle>
 
-    <!-- 3. Hạt từ Backend & Data 1 chạy vào Core (Lime Yellow) -->
+    <!-- 3. Hạt từ Backend &amp; Data 1 chạy vào Core (Lime Yellow) -->
     <circle r="4.5" fill="#bbf426">
       <animateMotion dur="2.8s" repeatCount="indefinite">
         <mpath href="#in-be-1" />
@@ -155,14 +156,14 @@
       </animateMotion>
     </circle>
 
-    <!-- Hạt từ Backend & Data 2 chạy vào Core -->
+    <!-- Hạt từ Backend &amp; Data 2 chạy vào Core -->
     <circle r="4" fill="#bbf426">
       <animateMotion dur="2.3s" begin="0.7s" repeatCount="indefinite">
         <mpath href="#in-be-2" />
       </animateMotion>
     </circle>
 
-    <!-- 4. Hạt từ Tools & Deploy 1 chạy vào Core (White/Cyan) -->
+    <!-- 4. Hạt từ Tools &amp; Deploy 1 chạy vào Core (White/Cyan) -->
     <circle r="4.5" fill="#ffffff">
       <animateMotion dur="3s" repeatCount="indefinite">
         <mpath href="#in-tools-1" />
@@ -174,7 +175,7 @@
       </animateMotion>
     </circle>
 
-    <!-- Hạt từ Tools & Deploy 2 chạy vào Core -->
+    <!-- Hạt từ Tools &amp; Deploy 2 chạy vào Core -->
     <circle r="4" fill="#ffffff">
       <animateMotion dur="2.2s" begin="0.5s" repeatCount="indefinite">
         <mpath href="#in-tools-2" />
@@ -270,8 +271,8 @@
     <text x="25" y="63" class="label-txt">CSS</text>
   </g>
 
-  <!-- ==================== CỤM 2: MOTION & 3D (BOTTOM LEFT - MAGENTA) ==================== -->
-  <text x="155" y="445" fill="#e02bf8" font-size="12" font-weight="900" class="mono-txt" letter-spacing="2">MOTION & 3D</text>
+  <!-- ==================== CỤM 2: MOTION &amp; 3D (BOTTOM LEFT - MAGENTA) ==================== -->
+  <text x="155" y="445" fill="#e02bf8" font-size="12" font-weight="900" class="mono-txt" letter-spacing="2">MOTION &amp; 3D</text>
 
   <!-- GSAP -->
   <g transform="translate(155, 345)">
@@ -296,8 +297,8 @@
     <text x="25" y="63" class="label-txt">Three.js</text>
   </g>
 
-  <!-- ==================== CỤM 3: BACKEND & DATA (TOP RIGHT - YELLOW/GREEN) ==================== -->
-  <text x="715" y="38" fill="#bbf426" font-size="12" font-weight="900" class="mono-txt" letter-spacing="2">BACKEND & DATA</text>
+  <!-- ==================== CỤM 3: BACKEND &amp; DATA (TOP RIGHT - YELLOW/GREEN) ==================== -->
+  <text x="715" y="38" fill="#bbf426" font-size="12" font-weight="900" class="mono-txt" letter-spacing="2">BACKEND &amp; DATA</text>
 
   <!-- Node.js -->
   <g transform="translate(715, 55)">
@@ -342,8 +343,8 @@
     <text x="25" y="63" class="label-txt">Docker</text>
   </g>
 
-  <!-- ==================== CỤM 4: TOOLS & DEPLOY (BOTTOM RIGHT - WHITE/CYAN) ==================== -->
-  <text x="895" y="460" fill="#ffffff" font-size="12" font-weight="900" class="mono-txt" letter-spacing="2">TOOLS & DEPLOY</text>
+  <!-- ==================== CỤM 4: TOOLS &amp; DEPLOY (BOTTOM RIGHT - WHITE/CYAN) ==================== -->
+  <text x="895" y="460" fill="#ffffff" font-size="12" font-weight="900" class="mono-txt" letter-spacing="2">TOOLS &amp; DEPLOY</text>
 
   <!-- Git -->
   <g transform="translate(715, 245)">

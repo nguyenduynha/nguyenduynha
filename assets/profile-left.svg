@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 710" width="100%" height="100%">
+  <defs>
+    <linearGradient id="leftSpiderBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#070a14"/>
+      <stop offset="100%" stop-color="#04060d"/>
+    </linearGradient>
+
+    <!-- Card Background -->
+    <linearGradient id="cardSpiderBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0e1529"/>
+      <stop offset="100%" stop-color="#070b16"/>
+    </linearGradient>
+
+    <!-- Button Background -->
+    <linearGradient id="btnSpiderBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141a33"/>
+      <stop offset="100%" stop-color="#080c1a"/>
+    </linearGradient>
+
+    <!-- Sparkline Gradients -->
+    <linearGradient id="waveRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e62429" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#e62429" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="waveStarkBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0077fe" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0077fe" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="waveSpiderCyan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="wavePurple" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d946ef" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#d946ef" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <!-- Web Texture Pattern -->
+    <pattern id="cardWebPattern" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 0 0 L 48 48 M 48 0 L 0 48" stroke="#e62429" stroke-width="0.35" opacity="0.12"/>
+      <circle cx="24" cy="24" r="12" fill="none" stroke="#e62429" stroke-width="0.35" opacity="0.1"/>
+    </pattern>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bangers&amp;family=Share+Tech+Mono&amp;display=swap');
+
+      .mono-txt { font-family: 'Share Tech Mono', 'Courier New', monospace; }
+      .bangers-txt { font-family: 'Bangers', cursive, sans-serif; letter-spacing: 2px; }
+      .pill-txt { font-family: 'Share Tech Mono', monospace; font-size: 14px; font-weight: bold; }
+      .desc-txt { font-family: 'Share Tech Mono', -apple-system, sans-serif; font-size: 16px; fill: #cbd5e1; }
+      .spec-lbl { font-family: 'Share Tech Mono', monospace; font-size: 16px; fill: #64748b; }
+      .spec-val { font-family: 'Share Tech Mono', monospace; font-size: 16px; font-weight: bold; }
+
+      @keyframes pulseDot {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+      .blink { animation: pulseDot 1.6s infinite ease-in-out; }
+    </style>
+  </defs>
+
+  <!-- Container Base -->
+  <rect width="1100" height="710" rx="16" fill="url(#leftSpiderBg)" stroke="#381928" stroke-width="2.5"/>
+  <rect width="1100" height="710" rx="16" fill="url(#cardWebPattern)"/>
+
+  <!-- ==================== 1. WHOAMI &amp; BADGES ==================== -->
+  <g transform="translate(45, 45)">
+    <!-- Header -->
+    <text x="0" y="0" class="bangers-txt" font-size="36" fill="#ffffff">
+      <tspan fill="#e62429">&gt;</tspan> WHOAMI <tspan font-family="'Share Tech Mono', monospace" font-size="20" fill="#94a3b8">(SPIDER-IDENTITY)</tspan>
+    </text>
+    <text x="1010" y="-5" class="mono-txt" font-size="16" fill="#00f0ff" text-anchor="end">EARTH-616 // VER 2.0</text>
+
+    <!-- Pill Badges -->
+    <g transform="translate(0, 22)">
+      <!-- Pill 1: web-slinger -->
+      <g transform="translate(0, 0)">
+        <rect width="140" height="32" rx="16" fill="#2d0a14" stroke="#e62429" stroke-width="1.5"/>
+        <text x="70" y="21" class="pill-txt" fill="#ff4455" text-anchor="middle">web-slinger</text>
+      </g>
+      <!-- Pill 2: stark-tech -->
+      <g transform="translate(155, 0)">
+        <rect width="130" height="32" rx="16" fill="#061e38" stroke="#0077fe" stroke-width="1.5"/>
+        <text x="65" y="21" class="pill-txt" fill="#38bdf8" text-anchor="middle">stark-tech</text>
+      </g>
+      <!-- Pill 3: spider-verse -->
+      <g transform="translate(300, 0)">
+        <rect width="145" height="32" rx="16" fill="#181229" stroke="#a855f7" stroke-width="1.5"/>
+        <text x="72" y="21" class="pill-txt" fill="#c084fc" text-anchor="middle">spider-verse</text>
+      </g>
+      <!-- Pill 4: react -->
+      <g transform="translate(460, 0)">
+        <rect width="105" height="32" rx="16" fill="#04202c" stroke="#00f0ff" stroke-width="1.5"/>
+        <text x="52" y="21" class="pill-txt" fill="#00f0ff" text-anchor="middle">react</text>
+      </g>
+      <!-- Pill 5: next.js -->
+      <g transform="translate(580, 0)">
+        <rect width="115" height="32" rx="16" fill="#18181b" stroke="#ffffff" stroke-width="1.2"/>
+        <text x="57" y="21" class="pill-txt" fill="#ffffff" text-anchor="middle">next.js</text>
+      </g>
+      <!-- Pill 6: trends.dev -->
+      <g transform="translate(710, 0)">
+        <rect width="130" height="32" rx="16" fill="#062220" stroke="#10b981" stroke-width="1.5"/>
+        <text x="65" y="21" class="pill-txt" fill="#10b981" text-anchor="middle">trends.dev</text>
+      </g>
+    </g>
+
+    <!-- Description Box -->
+    <g transform="translate(0, 75)">
+      <rect width="1010" height="65" rx="6" fill="#070c17" stroke="#2a1827" stroke-width="1.2"/>
+      <rect x="0" y="0" width="5" height="65" rx="2.5" fill="#e62429"/>
+      <text x="24" y="28" class="desc-txt">"With great coding power comes great UI responsibility."</text>
+      <text x="24" y="50" class="desc-txt" fill="#94a3b8">Creative Web Developer passionate about high-performance modern web apps and Spider-Verse UI.</text>
+    </g>
+
+    <!-- Terminal Specs -->
+    <g transform="translate(0, 155)">
+      <rect width="1010" height="115" rx="6" fill="#040712" stroke="#1c1d2e" stroke-width="1.2"/>
+      <text x="24" y="30" class="spec-lbl">alias: <tspan class="spec-val" fill="#f8fafc">duynhat</tspan></text>
+      <text x="24" y="55" class="spec-lbl">role: <tspan class="spec-val" fill="#ff4455">Creative Web Developer</tspan></text>
+      <text x="24" y="80" class="spec-lbl">specialization: <tspan class="spec-val" fill="#0077fe">Creative Web Developer / Spider-Verse UI</tspan></text>
+      <text x="24" y="102" class="spec-lbl">universe: <tspan class="spec-val" fill="#a855f7">Earth-616 / Viet Nam</tspan></text>
+
+      <text x="750" y="102" class="spec-lbl">status: <tspan class="spec-val" fill="#00f0ff">web-slinging active</tspan></text>
+      <circle cx="735" cy="97" r="4.5" fill="#00f0ff" class="blink"/>
+    </g>
+  </g>
+
+  <!-- ==================== 2. TELEMETRY SPARKLINE MONITORS ==================== -->
+  <g transform="translate(45, 360)">
+    <text x="0" y="0" class="mono-txt" font-size="13" font-weight="bold" fill="#ff4455" letter-spacing="1.5">
+      // TELEMETRY MONITORS · SUIT DIAGNOSTICS
+    </text>
+
+    <!-- 4 Cards Row -->
+    <g transform="translate(0, 15)">
+      <!-- Card 1: Web Fluid -->
+      <g transform="translate(0, 0)">
+        <rect width="235" height="135" rx="8" fill="url(#cardSpiderBg)" stroke="#e62429" stroke-width="1.5"/>
+        <text x="18" y="28" class="mono-txt" font-size="13" fill="#ff4455">WEB.FLUID</text>
+        <text x="217" y="30" class="mono-txt" font-size="22" font-weight="bold" fill="#ff3344" text-anchor="end">98%<tspan font-size="14" fill="#00f0ff">▲</tspan></text>
+        <path d="M 18 105 Q 50 90, 80 98 T 140 75 T 190 85 T 217 70 L 217 115 L 18 115 Z" fill="url(#waveRed)"/>
+        <path d="M 18 105 Q 50 90, 80 98 T 140 75 T 190 85 T 217 70" fill="none" stroke="#e62429" stroke-width="2.2"/>
+        <circle cx="217" cy="70" r="3.5" fill="#ff3344" class="blink"/>
+        <text x="18" y="124" class="mono-txt" font-size="11" fill="#64748b">PRESSURE &gt;&gt; OPTIMAL</text>
+      </g>
+
+      <!-- Card 2: Commits -->
+      <g transform="translate(258, 0)">
+        <rect width="235" height="135" rx="8" fill="url(#cardSpiderBg)" stroke="#0077fe" stroke-width="1.5"/>
+        <text x="18" y="28" class="mono-txt" font-size="13" fill="#38bdf8">COMMITS</text>
+        <text x="217" y="30" class="mono-txt" font-size="22" font-weight="bold" fill="#38bdf8" text-anchor="end">173</text>
+        <path d="M 18 106 Q 50 100, 80 80 T 140 85 T 180 65 T 217 74 L 217 115 L 18 115 Z" fill="url(#waveStarkBlue)"/>
+        <path d="M 18 106 Q 50 100, 80 80 T 140 85 T 180 65 T 217 74" fill="none" stroke="#0077fe" stroke-width="2.2"/>
+        <circle cx="217" cy="74" r="3.5" fill="#38bdf8" class="blink"/>
+        <text x="18" y="124" class="mono-txt" font-size="11" fill="#64748b">ACTIVITY &gt;&gt; ACTIVE</text>
+      </g>
+
+      <!-- Card 3: Agility -->
+      <g transform="translate(516, 0)">
+        <rect width="235" height="135" rx="8" fill="url(#cardSpiderBg)" stroke="#00f0ff" stroke-width="1.5"/>
+        <text x="18" y="28" class="mono-txt" font-size="13" fill="#00f0ff">AGILITY</text>
+        <text x="217" y="30" class="mono-txt" font-size="22" font-weight="bold" fill="#00f0ff" text-anchor="end">113</text>
+        <path d="M 18 100 Q 50 110, 90 92 T 145 80 T 180 95 T 217 76 L 217 115 L 18 115 Z" fill="url(#waveSpiderCyan)"/>
+        <path d="M 18 100 Q 50 110, 90 92 T 145 80 T 180 95 T 217 76" fill="none" stroke="#00f0ff" stroke-width="2.2"/>
+        <circle cx="217" cy="76" r="3.5" fill="#00f0ff" class="blink"/>
+        <text x="18" y="124" class="mono-txt" font-size="11" fill="#64748b">PULL.REQ &gt;&gt; SYNCED</text>
+      </g>
+
+      <!-- Card 4: Projects -->
+      <g transform="translate(774, 0)">
+        <rect width="236" height="135" rx="8" fill="url(#cardSpiderBg)" stroke="#d946ef" stroke-width="1.5"/>
+        <text x="18" y="28" class="mono-txt" font-size="13" fill="#d946ef">PROJECTS</text>
+        <text x="217" y="30" class="mono-txt" font-size="22" font-weight="bold" fill="#d946ef" text-anchor="end">18<tspan font-size="14" fill="#f472b6">★</tspan></text>
+        <path d="M 18 110 Q 60 110, 100 106 T 150 58 T 180 100 T 217 104 L 217 115 L 18 115 Z" fill="url(#wavePurple)"/>
+        <path d="M 18 110 Q 60 110, 100 106 T 150 58 T 180 100 T 217 104" fill="none" stroke="#d946ef" stroke-width="2.2"/>
+        <circle cx="150" cy="58" r="3.5" fill="#f472b6" class="blink"/>
+        <text x="18" y="124" class="mono-txt" font-size="11" fill="#64748b">RELEASE &gt;&gt; STARK.V2</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== 3. CONNECT WITH ME ==================== -->
+  <g transform="translate(45, 545)">
+    <text x="0" y="20" class="bangers-txt" font-size="22" fill="#ffffff">
+      CONNECT WITH ME <tspan font-family="'Share Tech Mono', monospace" font-size="13" fill="#e62429">// SPIDER-NETWORK</tspan>
+    </text>
+
+    <g transform="translate(0, 36)">
+      <!-- Button 1: LinkedIn -->
+      <g transform="translate(0, 0)">
+        <polygon points="12,0 230,0 245,14 245,46 230,60 12,60 0,46 0,14" fill="url(#btnSpiderBg)" stroke="#e62429" stroke-width="1.8"/>
+        <rect x="25" y="16" width="28" height="28" rx="4" fill="#0077b5"/>
+        <text x="39" y="36" font-family="'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="bold" fill="#ffffff" text-anchor="middle">in</text>
+        <text x="75" y="38" class="mono-txt" font-size="18" font-weight="bold" fill="#ff4455" letter-spacing="1.5">LINKEDIN</text>
+      </g>
+
+      <!-- Button 2: Discord -->
+      <g transform="translate(258, 0)">
+        <polygon points="12,0 230,0 245,14 245,46 230,60 12,60 0,46 0,14" fill="url(#btnSpiderBg)" stroke="#0077fe" stroke-width="1.8"/>
+        <path d="M14 3 C7.5 3 2.5 7.5 2.5 7.5 C2.5 7.5 4.5 5 11 4.5 L11.5 5.5 C8 6.5 6.5 8 6.5 8 C6.5 8 8.5 7 12 7 C15.5 7 17.5 8 17.5 8 C17.5 8 16 6.5 12.5 5.5 L13 4.5 C19.5 5 21.5 7.5 21.5 7.5 C21.5 7.5 16.5 3 14 3 Z" fill="#5865f2" transform="translate(25, 14) scale(1.4)"/>
+        <text x="75" y="38" class="mono-txt" font-size="18" font-weight="bold" fill="#38bdf8" letter-spacing="1.5">DISCORD</text>
+      </g>
+
+      <!-- Button 3: Twitter/X -->
+      <g transform="translate(516, 0)">
+        <polygon points="12,0 230,0 245,14 245,46 230,60 12,60 0,46 0,14" fill="url(#btnSpiderBg)" stroke="#00f0ff" stroke-width="1.8"/>
+        <path d="M12.8 1.5 L7.8 7.3 L13.8 15.5 H9.8 L5.8 10.1 L1.9 15.5 H0 L5.3 9.3 L-0.4 1.5 H3.6 L7.3 6.6 L10.9 1.5 H12.8 Z" fill="#ffffff" transform="translate(26, 16) scale(1.4)"/>
+        <text x="72" y="38" class="mono-txt" font-size="18" font-weight="bold" fill="#00f0ff" letter-spacing="1.5">TWITTER/X</text>
+      </g>
+
+      <!-- Button 4: Email -->
+      <g transform="translate(774, 0)">
+        <polygon points="12,0 230,0 245,14 245,46 230,60 12,60 0,46 0,14" fill="url(#btnSpiderBg)" stroke="#facc15" stroke-width="1.8"/>
+        <rect x="25" y="18" width="28" height="22" rx="3" fill="none" stroke="#facc15" stroke-width="2"/>
+        <path d="M 25 19 L 39 30 L 53 19" fill="none" stroke="#facc15" stroke-width="2"/>
+        <text x="78" y="38" class="mono-txt" font-size="18" font-weight="bold" fill="#facc15" letter-spacing="1.5">EMAIL</text>
+      </g>
+    </g>
+  </g>
+</svg>
