@@ -71,3 +71,10 @@
     <img src="./assets/featured-builds.svg" alt="featured builds --live" width="100%"/>
   </a>
 </p>
+
+<p align="center">
+  <a href="https://github.com/nguyenduynha/PMS-system"><b>[ 🏨 PMS-system ]</b></a> &nbsp;•&nbsp;
+  <a href="https://github.com/nguyenduynha/Landing-Page"><b>[ 🚀 Landing-Page ]</b></a> &nbsp;•&nbsp;
+  <a href="https://github.com/nguyenduynha/duynhat"><b>[ 🕹️ duynhat ]</b></a> &nbsp;•&nbsp;
+  <a href="https://github.com/nguyenduynha/nguyenduynha"><b>[ 🕷️ nguyenduynha ]</b></a>
+</p>
