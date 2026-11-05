@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="skillTreeBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#080d1a"/>
+      <stop offset="50%" stop-color="#050812"/>
+      <stop offset="100%" stop-color="#03050a"/>
+    </linearGradient>
+
+    <!-- Holographic Rainbow Gradient for Progress Bars -->
+    <linearGradient id="barRainbowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="35%" stop-color="#3b82f6"/>
+      <stop offset="65%" stop-color="#a855f7"/>
+      <stop offset="85%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#facc15"/>
+    </linearGradient>
+
+    <!-- Rainbow Bottom Bar Gradient -->
+    <linearGradient id="rainbowBottomGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="25%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="75%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#facc15"/>
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="barGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#00f0ff" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#ec4899" flood-opacity="0.35"/>
+    </filter>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+
+      .mono-txt { font-family: 'Share Tech Mono', 'Courier New', monospace; }
+      .skill-name { font-family: 'Share Tech Mono', monospace; font-size: 16px; font-weight: bold; fill: #ffffff; letter-spacing: 0.5px; }
+      .badge-lvl { font-family: 'Share Tech Mono', monospace; font-size: 11px; font-weight: 900; letter-spacing: 1.5px; text-anchor: middle; }
+      .pct-txt { font-family: 'Share Tech Mono', monospace; font-size: 17px; font-weight: 900; text-anchor: end; }
+
+      /* Animated Progress Bar Shimmer */
+      @keyframes shimmerSweep {
+        0% { opacity: 0.85; filter: drop-shadow(0 0 4px rgba(0, 240, 255, 0.5)); }
+        50% { opacity: 1; filter: drop-shadow(0 0 10px rgba(0, 240, 255, 0.9)) drop-shadow(0 0 18px rgba(236, 72, 153, 0.6)); }
+        100% { opacity: 0.85; filter: drop-shadow(0 0 4px rgba(0, 240, 255, 0.5)); }
+      }
+      .anim-bar { animation: shimmerSweep 3s ease-in-out infinite alternate; }
+    </style>
+  </defs>
+
+  <!-- Container Base -->
+  <rect width="1000" height="460" rx="14" fill="url(#skillTreeBg)" stroke="#1a273e" stroke-width="2"/>
+
+  <!-- ==================== SKILL ROWS ==================== -->
+
+  <!-- ROW 1: React / Next.js (95% MASTER) -->
+  <g transform="translate(30, 25)">
+    <!-- Icon Badge (RX) -->
+    <rect width="40" height="40" rx="8" fill="#061a1a" stroke="#facc15" stroke-width="1.6"/>
+    <text x="20" y="26" class="mono-txt" font-size="14" font-weight="900" fill="#facc15" text-anchor="middle">RX</text>
+
+    <!-- Skill Name -->
+    <text x="56" y="26" class="skill-name">React / Next.js</text>
+
+    <!-- Level Pill (MASTER) -->
+    <g transform="translate(260, 10)">
+      <rect width="70" height="20" rx="4" fill="#1f1806" stroke="#facc15" stroke-width="1.2"/>
+      <text x="35" y="14" class="badge-lvl" fill="#facc15">MASTER</text>
+    </g>
+
+    <!-- Progress Bar Track -->
+    <rect x="360" y="14" width="500" height="14" rx="7" fill="#091222"/>
+    <!-- Progress Bar Fill (95% -> width 475) -->
+    <rect x="360" y="14" width="475" height="14" rx="7" fill="url(#barRainbowGrad)" class="anim-bar"/>
+
+    <!-- Percentage Text -->
+    <text x="940" y="27" class="pct-txt" fill="#facc15">95%</text>
+  </g>
+
+  <!-- ROW 2: GSAP / Animation (92% EXPERT) -->
+  <g transform="translate(30, 85)">
+    <rect width="40" height="40" rx="8" fill="#051c22" stroke="#00f0ff" stroke-width="1.6"/>
+    <text x="20" y="26" class="mono-txt" font-size="14" font-weight="900" fill="#00f0ff" text-anchor="middle">GS</text>
+
+    <text x="56" y="26" class="skill-name">GSAP / Animation</text>
+
+    <g transform="translate(260, 10)">
+      <rect width="70" height="20" rx="4" fill="#051f26" stroke="#00f0ff" stroke-width="1.2"/>
+      <text x="35" y="14" class="badge-lvl" fill="#00f0ff">EXPERT</text>
+    </g>
+
+    <rect x="360" y="14" width="500" height="14" rx="7" fill="#091222"/>
+    <rect x="360" y="14" width="460" height="14" rx="7" fill="url(#barRainbowGrad)" class="anim-bar"/>
+
+    <text x="940" y="27" class="pct-txt" fill="#00f0ff">92%</text>
+  </g>
+
+  <!-- ROW 3: JavaScript (90% EXPERT) -->
+  <g transform="translate(30, 145)">
+    <rect width="40" height="40" rx="8" fill="#051c22" stroke="#00f0ff" stroke-width="1.6"/>
+    <text x="20" y="26" class="mono-txt" font-size="14" font-weight="900" fill="#00f0ff" text-anchor="middle">JS</text>
+
+    <text x="56" y="26" class="skill-name">JavaScript</text>
+
+    <g transform="translate(260, 10)">
+      <rect width="70" height="20" rx="4" fill="#051f26" stroke="#00f0ff" stroke-width="1.2"/>
+      <text x="35" y="14" class="badge-lvl" fill="#00f0ff">EXPERT</text>
+    </g>
+
+    <rect x="360" y="14" width="500" height="14" rx="7" fill="#091222"/>
+    <rect x="360" y="14" width="450" height="14" rx="7" fill="url(#barRainbowGrad)" class="anim-bar"/>
+
+    <text x="940" y="27" class="pct-txt" fill="#00f0ff">90%</text>
+  </g>
+
+  <!-- ROW 4: UI/UX Design (90% EXPERT) -->
+  <g transform="translate(30, 205)">
+    <rect width="40" height="40" rx="8" fill="#051c22" stroke="#00f0ff" stroke-width="1.6"/>
+    <text x="20" y="26" class="mono-txt" font-size="14" font-weight="900" fill="#00f0ff" text-anchor="middle">UX</text>
+
+    <text x="56" y="26" class="skill-name">UI/UX Design</text>
+
+    <g transform="translate(260, 10)">
+      <rect width="70" height="20" rx="4" fill="#051f26" stroke="#00f0ff" stroke-width="1.2"/>
+      <text x="35" y="14" class="badge-lvl" fill="#00f0ff">EXPERT</text>
+    </g>
+
+    <rect x="360" y="14" width="500" height="14" rx="7" fill="#091222"/>
+    <rect x="360" y="14" width="450" height="14" rx="7" fill="url(#barRainbowGrad)" class="anim-bar"/>
+
+    <text x="940" y="27" class="pct-txt" fill="#00f0ff">90%</text>
+  </g>
+
+  <!-- ROW 5: TypeScript (88% EXPERT) -->
+  <g transform="translate(30, 265)">
+    <rect width="40" height="40" rx="8" fill="#051c22" stroke="#00f0ff" stroke-width="1.6"/>
+    <text x="20" y="26" class="mono-txt" font-size="14" font-weight="900" fill="#00f0ff" text-anchor="middle">TS</text>
+
+    <text x="56" y="26" class="skill-name">TypeScript</text>
+
+    <g transform="translate(260, 10)">
+      <rect width="70" height="20" rx="4" fill="#051f26" stroke="#00f0ff" stroke-width="1.2"/>
+      <text x="35" y="14" class="badge-lvl" fill="#00f0ff">EXPERT</text>
+    </g>
+
+    <rect x="360" y="14" width="500" height="14" rx="7" fill="#091222"/>
+    <rect x="360" y="14" width="440" height="14" rx="7" fill="url(#barRainbowGrad)" class="anim-bar"/>
+
+    <text x="940" y="27" class="pct-txt" fill="#00f0ff">88%</text>
+  </g>
+
+  <!-- ROW 6: Three.js / WebGL (82% ADVANCED) -->
+  <g transform="translate(30, 325)">
+    <rect width="40" height="40" rx="8" fill="#1c0a22" stroke="#d946ef" stroke-width="1.6"/>
+    <text x="20" y="26" class="mono-txt" font-size="14" font-weight="900" fill="#d946ef" text-anchor="middle">3D</text>
+
+    <text x="56" y="26" class="skill-name">Three.js / WebGL</text>
+
+    <g transform="translate(260, 10)">
+      <rect width="80" height="20" rx="4" fill="#240b2d" stroke="#d946ef" stroke-width="1.2"/>
+      <text x="40" y="14" class="badge-lvl" fill="#d946ef">ADVANCED</text>
+    </g>
+
+    <rect x="360" y="14" width="500" height="14" rx="7" fill="#091222"/>
+    <rect x="360" y="14" width="410" height="14" rx="7" fill="url(#barRainbowGrad)" class="anim-bar"/>
+
+    <text x="940" y="27" class="pct-txt" fill="#d946ef">82%</text>
+  </g>
+
+  <!-- ROW 7: Java (80% ADVANCED) -->
+  <g transform="translate(30, 385)">
+    <rect width="40" height="40" rx="8" fill="#1c0a22" stroke="#d946ef" stroke-width="1.6"/>
+    <text x="20" y="26" class="mono-txt" font-size="14" font-weight="900" fill="#d946ef" text-anchor="middle">JV</text>
+
+    <text x="56" y="26" class="skill-name">Java</text>
+
+    <g transform="translate(260, 10)">
+      <rect width="80" height="20" rx="4" fill="#240b2d" stroke="#d946ef" stroke-width="1.2"/>
+      <text x="40" y="14" class="badge-lvl" fill="#d946ef">ADVANCED</text>
+    </g>
+
+    <rect x="360" y="14" width="500" height="14" rx="7" fill="#091222"/>
+    <rect x="360" y="14" width="400" height="14" rx="7" fill="url(#barRainbowGrad)" class="anim-bar"/>
+
+    <text x="940" y="27" class="pct-txt" fill="#d946ef">80%</text>
+  </g>
+
+  <!-- Bottom Glowing Rainbow Border Line -->
+  <rect x="25" y="448" width="950" height="4" rx="2" fill="url(#rainbowBottomGrad)"/>
+</svg>

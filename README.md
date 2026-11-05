@@ -8,19 +8,63 @@
 
 ---
 
-<table border="0" width="100%" cellpadding="0" cellspacing="0">
-  <tr border="0">
-    <td width="49%" valign="top">
-      <img src="./assets/profile-left.svg" alt="Spider-Man Profile Overview" width="100%"/>
-    </td>
-    <td width="2%"></td>
-    <td width="49%" valign="top">
-      <img src="./assets/profile-right.svg" alt="Spider-Man Tech Stack and Stats" width="100%"/>
-    </td>
-  </tr>
-</table>
+<p align="left">
+  <code>🧬 &gt; whoami</code>
+</p>
+
+<p align="center">
+  <img src="./assets/whoami-card.svg" alt="whoami card" width="100%"/>
+</p>
+
+<p align="center">
+  <img src="./assets/telemetry-stats.svg" alt="telemetry stats" width="100%"/>
+</p>
 
 <br/>
+
+<p align="left">
+  <code>🧪 &gt; sudo install --tech-stack</code>
+</p>
+
+<p align="center">
+  <img src="./assets/tech-stack.svg" alt="tech stack" width="100%"/>
+</p>
+
+<br/>
+
+<p align="left">
+  <code>🕹️ &gt; skill_tree.exe</code>
+</p>
+
+<p align="center">
+  <img src="./assets/skill-tree.svg" alt="skill tree" width="100%"/>
+</p>
+
+<br/>
+
+<p align="left">
+  <code>📊 &gt; hero_stats.sys</code>
+</p>
+
+<p align="center">
+  <img src="./assets/stats-cards.svg" alt="hero stats cards" width="100%"/>
+</p>
+
+<br/>
+
+<p align="left">
+  <code>📡 &gt; connect_with_me</code>
+</p>
+
+<p align="center">
+  <img src="./assets/connect-bar.svg" alt="connect with me" width="100%"/>
+</p>
+
+<br/>
+
+<p align="left">
+  <code>🚀 &gt; featured_builds --live</code>
+</p>
 
 <p align="center">
   <a href="https://github.com/nguyenduynha?tab=repositories">
