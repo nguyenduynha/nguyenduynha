@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 235" width="100%" height="100%">
+  <defs>
+    <linearGradient id="whoamiBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#060c18"/>
+      <stop offset="100%" stop-color="#02050b"/>
+    </linearGradient>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&amp;family=Share+Tech+Mono&amp;display=swap');
+
+      .mono-txt { font-family: 'Share Tech Mono', 'Courier New', monospace; }
+      .pill-txt { font-family: 'Share Tech Mono', monospace; font-size: 8.5px; font-weight: bold; }
+      .desc-txt { font-family: 'Share Tech Mono', -apple-system, sans-serif; font-size: 9.5px; fill: #cbd5e1; }
+      .spec-lbl { font-family: 'Share Tech Mono', monospace; font-size: 10px; fill: #64748b; }
+      .spec-val { font-family: 'Share Tech Mono', monospace; font-size: 10px; fill: #38bdf8; font-weight: bold; }
+
+      @keyframes pulseDot {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+      .blink { animation: pulseDot 1.6s infinite ease-in-out; }
+    </style>
+  </defs>
+
+  <!-- Container Base -->
+  <rect width="540" height="235" rx="8" fill="url(#whoamiBg)" stroke="#162c4b" stroke-width="1.4"/>
+
+  <!-- ==================== TITLE & TERMINAL ==================== -->
+  <g transform="translate(18, 24)">
+    <text x="0" y="0" font-family="'Orbitron', monospace" font-size="14" font-weight="900" fill="#ffffff" letter-spacing="1.5">
+      <tspan fill="#00f0ff">&gt;</tspan> whoami
+    </text>
+  </g>
+
+  <!-- ==================== BADGE PILLS ROW ==================== -->
+  <g transform="translate(18, 38)">
+    <!-- Pill 1: Cyberpunk -->
+    <g transform="translate(0, 0)">
+      <rect width="68" height="18" rx="9" fill="#042017" stroke="#10b981" stroke-width="1"/>
+      <text x="34" y="12" class="pill-txt" fill="#10b981" text-anchor="middle">cyberpunk</text>
+    </g>
+
+    <!-- Pill 2: Mecha-UI -->
+    <g transform="translate(73, 0)">
+      <rect width="64" height="18" rx="9" fill="#061f30" stroke="#00f0ff" stroke-width="1"/>
+      <text x="32" y="12" class="pill-txt" fill="#00f0ff" text-anchor="middle">mecha-ui</text>
+    </g>
+
+    <!-- Pill 3: Creative-Dev -->
+    <g transform="translate(142, 0)">
+      <rect width="80" height="18" rx="9" fill="#141438" stroke="#818cf8" stroke-width="1"/>
+      <text x="40" y="12" class="pill-txt" fill="#818cf8" text-anchor="middle">creative-dev</text>
+    </g>
+
+    <!-- Pill 4: Techbadges -->
+    <g transform="translate(227, 0)">
+      <rect width="76" height="18" rx="9" fill="#2d0d36" stroke="#d946ef" stroke-width="1"/>
+      <text x="38" y="12" class="pill-txt" fill="#d946ef" text-anchor="middle">techbadges</text>
+    </g>
+
+    <!-- Pill 5: Next.js -->
+    <g transform="translate(308, 0)">
+      <rect width="60" height="18" rx="9" fill="#290b14" stroke="#f43f5e" stroke-width="1"/>
+      <text x="30" y="12" class="pill-txt" fill="#f43f5e" text-anchor="middle">next.js</text>
+    </g>
+
+    <!-- Pill 6: Trends.dev -->
+    <g transform="translate(373, 0)">
+      <rect width="66" height="18" rx="9" fill="#06222b" stroke="#06b6d4" stroke-width="1"/>
+      <text x="33" y="12" class="pill-txt" fill="#06b6d4" text-anchor="middle">trends.gr</text>
+    </g>
+  </g>
+
+  <!-- ==================== DESCRIPTION QUOTE BOX ==================== -->
+  <g transform="translate(18, 70)">
+    <rect width="504" height="48" rx="4" fill="#030814" stroke="#142642" stroke-width="1"/>
+    <!-- Left Accent Bar -->
+    <rect x="0" y="0" width="3.5" height="48" rx="1.5" fill="#00f0ff"/>
+    <!-- Quote text -->
+    <text x="14" y="20" class="desc-txt">RX-78-2 anime duynhat and a Creative Developer / Mecha UI Engineer.</text>
+    <text x="14" y="36" class="desc-txt" fill="#94a3b8">Developer bio/teaser and section, for next iteration update and cyber design.</text>
+  </g>
+
+  <!-- ==================== TERMINAL SPEC SPECIFICATIONS ==================== -->
+  <g transform="translate(18, 134)">
+    <rect width="504" height="86" rx="4" fill="#020610" stroke="#0f1d33" stroke-width="1"/>
+
+    <!-- Row 1: name -->
+    <text x="16" y="20" class="spec-lbl">name: <tspan class="spec-val" fill="#f8fafc">duynhat</tspan></text>
+
+    <!-- Row 2: role -->
+    <text x="16" y="36" class="spec-lbl">role: <tspan class="spec-val" fill="#00f0ff">Creative Developer</tspan></text>
+
+    <!-- Row 3: specialization -->
+    <text x="16" y="52" class="spec-lbl">specialization: <tspan class="spec-val" fill="#a855f7">Creative Developer / Mecha UI Engineer</tspan></text>
+
+    <!-- Row 4: location & status -->
+    <text x="16" y="68" class="spec-lbl">location: <tspan class="spec-val" fill="#10b981">Earth / Viet Nam</tspan></text>
+    
+    <text x="320" y="68" class="spec-lbl">status: <tspan class="spec-val" fill="#10b981">awakened</tspan></text>
+    <circle cx="310" cy="65" r="3" fill="#10b981" class="blink"/>
+  </g>
+</svg>
