@@ -2,18 +2,18 @@
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="bgCanvas" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#060914" />
-      <stop offset="50%" stop-color="#0c0b1a" />
-      <stop offset="100%" stop-color="#120814" />
+      <stop offset="0%" stop-color="#03070d" />
+      <stop offset="50%" stop-color="#060c17" />
+      <stop offset="100%" stop-color="#02050a" />
     </linearGradient>
 
     <!-- Rainbow / Holographic Border Gradient for CPU -->
     <linearGradient id="rainbowBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#e62429" />
-      <stop offset="25%" stop-color="#0077fe" />
-      <stop offset="50%" stop-color="#00f0ff" />
-      <stop offset="75%" stop-color="#ff3344" />
-      <stop offset="100%" stop-color="#facc15" />
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="25%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="75%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#eab308" />
     </linearGradient>
 
     <!-- Dot Grid Pattern -->
@@ -183,27 +183,27 @@
   </g>
 
   <!-- ==================== CENTER CORE CPU (CHIP VI XỬ LÝ) ==================== -->
-  <g fill="#435e7d">
-    <!-- Top & Bottom Pins -->
-    <rect x="495" y="172" width="5" height="12" rx="1" />
-    <rect x="520" y="172" width="5" height="12" rx="1" />
-    <rect x="545" y="172" width="5" height="12" rx="1" />
-    <rect x="570" y="172" width="5" height="12" rx="1" />
-    <rect x="595" y="172" width="5" height="12" rx="1" />
-    <rect x="495" y="296" width="5" height="12" rx="1" />
-    <rect x="520" y="296" width="5" height="12" rx="1" />
-    <rect x="545" y="296" width="5" height="12" rx="1" />
-    <rect x="570" y="296" width="5" height="12" rx="1" />
-    <rect x="595" y="296" width="5" height="12" rx="1" />
-    <!-- Left & Right Pins -->
-    <rect x="466" y="200" width="12" height="5" rx="1" />
-    <rect x="466" y="228" width="12" height="5" rx="1" />
-    <rect x="466" y="248" width="12" height="5" rx="1" />
-    <rect x="466" y="275" width="12" height="5" rx="1" />
-    <rect x="622" y="200" width="12" height="5" rx="1" />
-    <rect x="622" y="228" width="12" height="5" rx="1" />
-    <rect x="622" y="248" width="12" height="5" rx="1" />
-    <rect x="622" y="275" width="12" height="5" rx="1" />
+  <g fill="#00d8f6" opacity="0.9">
+    <!-- Top Pins (4) -->
+    <rect x="500" y="170" width="5" height="12" rx="1.5" />
+    <rect x="530" y="170" width="5" height="12" rx="1.5" />
+    <rect x="565" y="170" width="5" height="12" rx="1.5" />
+    <rect x="595" y="170" width="5" height="12" rx="1.5" />
+    <!-- Bottom Pins (4) -->
+    <rect x="500" y="298" width="5" height="12" rx="1.5" />
+    <rect x="530" y="298" width="5" height="12" rx="1.5" />
+    <rect x="565" y="298" width="5" height="12" rx="1.5" />
+    <rect x="595" y="298" width="5" height="12" rx="1.5" />
+    <!-- Left Pins (4) -->
+    <rect x="465" y="200" width="12" height="5" rx="1.5" />
+    <rect x="465" y="226" width="12" height="5" rx="1.5" />
+    <rect x="465" y="252" width="12" height="5" rx="1.5" />
+    <rect x="465" y="276" width="12" height="5" rx="1.5" />
+    <!-- Right Pins (4) -->
+    <rect x="623" y="200" width="12" height="5" rx="1.5" />
+    <rect x="623" y="226" width="12" height="5" rx="1.5" />
+    <rect x="623" y="252" width="12" height="5" rx="1.5" />
+    <rect x="623" y="276" width="12" height="5" rx="1.5" />
   </g>
 
   <!-- Thân chip vi xử lý (Nhận dữ liệu) -->
@@ -211,8 +211,8 @@
     <rect x="475" y="180" width="150" height="120" rx="14" fill="#091322" stroke="url(#rainbowBorder)" stroke-width="2.5" />
     <rect x="483" y="188" width="134" height="104" rx="10" fill="#060c16" stroke="#162e4e" stroke-width="1.2" />
     
-    <text x="550" y="240" fill="#00f2fe" font-size="20" font-weight="900" class="mono-txt" text-anchor="middle" letter-spacing="2" filter="url(#neonGlow)">KHANH</text>
-    <text x="550" y="264" fill="#6c92be" font-size="9" font-weight="bold" class="mono-txt" text-anchor="middle" letter-spacing="1">CORE · v2026.09</text>
+    <text x="550" y="240" fill="#00f2fe" font-size="20" font-weight="900" class="mono-txt" text-anchor="middle" letter-spacing="2" filter="url(#neonGlow)">DUYNHAT</text>
+    <text x="550" y="264" fill="#6c92be" font-size="9" font-weight="bold" class="mono-txt" text-anchor="middle" letter-spacing="1">CORE · v2026.11</text>
   </g>
 
   <!-- ==================== CỤM 1: CORE (TOP LEFT - CYAN) ==================== -->
@@ -342,7 +342,7 @@
     <text x="25" y="63" class="label-txt">Docker</text>
   </g>
 
-  <!-- ==================== CỤM 4: STARK TOOLS & DEPLOY (BOTTOM RIGHT - WHITE/CYAN) ==================== -->
+  <!-- ==================== CỤM 4: TOOLS & DEPLOY (BOTTOM RIGHT - WHITE/CYAN) ==================== -->
   <text x="895" y="460" fill="#ffffff" font-size="12" font-weight="900" class="mono-txt" letter-spacing="2">TOOLS & DEPLOY</text>
 
   <!-- Git -->
