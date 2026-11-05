@@ -1,49 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 65" width="100%" height="100%">
   <defs>
-    <linearGradient id="btnBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#071224"/>
-      <stop offset="100%" stop-color="#020612"/>
+    <linearGradient id="btnSpiderBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1122"/>
+      <stop offset="100%" stop-color="#05060f"/>
     </linearGradient>
 
     <style>
       .btn-lbl { font-family: 'Share Tech Mono', 'Courier New', monospace; font-size: 10px; font-weight: bold; letter-spacing: 1px; }
-      .hdr-txt { font-family: 'Orbitron', monospace, sans-serif; font-size: 11px; font-weight: 900; letter-spacing: 2px; fill: #ffffff; }
+      .hdr-txt { font-family: 'Bangers', cursive, sans-serif; font-size: 15px; letter-spacing: 2px; fill: #ffffff; }
     </style>
   </defs>
 
   <!-- Header -->
-  <text x="0" y="14" class="hdr-txt">CONNECT WITH ME</text>
+  <text x="0" y="15" class="hdr-txt">CONNECT WITH ME <tspan font-family="'Share Tech Mono', monospace" font-size="10" fill="#e62429">// SPIDER-NETWORK</tspan></text>
 
   <!-- Buttons Row -->
   <g transform="translate(0, 24)">
-    <!-- Button 1: LinkedIn -->
+    <!-- Button 1: LinkedIn (Marvel Red) -->
     <g transform="translate(0, 0)">
-      <polygon points="8,0 116,0 125,8 125,24 116,32 8,32 0,24 0,8" fill="url(#btnBg)" stroke="#00f0ff" stroke-width="1.2"/>
+      <polygon points="8,0 116,0 125,8 125,24 116,32 8,32 0,24 0,8" fill="url(#btnSpiderBg)" stroke="#e62429" stroke-width="1.3"/>
       <rect x="14" y="8" width="16" height="16" rx="2" fill="#0077b5"/>
       <text x="22" y="20" font-family="'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle">in</text>
-      <text x="40" y="20" class="btn-lbl" fill="#00f0ff">LINKEDIN</text>
+      <text x="40" y="20" class="btn-lbl" fill="#ff4455">LINKEDIN</text>
     </g>
 
-    <!-- Button 2: Discord -->
+    <!-- Button 2: Discord (Stark Blue) -->
     <g transform="translate(138, 0)">
-      <polygon points="8,0 116,0 125,8 125,24 116,32 8,32 0,24 0,8" fill="url(#btnBg)" stroke="#818cf8" stroke-width="1.2"/>
+      <polygon points="8,0 116,0 125,8 125,24 116,32 8,32 0,24 0,8" fill="url(#btnSpiderBg)" stroke="#0077fe" stroke-width="1.3"/>
       <path d="M14 3 C7.5 3 2.5 7.5 2.5 7.5 C2.5 7.5 4.5 5 11 4.5 L11.5 5.5 C8 6.5 6.5 8 6.5 8 C6.5 8 8.5 7 12 7 C15.5 7 17.5 8 17.5 8 C17.5 8 16 6.5 12.5 5.5 L13 4.5 C19.5 5 21.5 7.5 21.5 7.5 C21.5 7.5 16.5 3 14 3 Z" fill="#5865f2" transform="translate(14, 7) scale(0.8)"/>
-      <text x="40" y="20" class="btn-lbl" fill="#818cf8">DISCORD</text>
+      <text x="40" y="20" class="btn-lbl" fill="#38bdf8">DISCORD</text>
     </g>
 
-    <!-- Button 3: Twitter/X -->
+    <!-- Button 3: Twitter/X (Cyan) -->
     <g transform="translate(276, 0)">
-      <polygon points="8,0 116,0 125,8 125,24 116,32 8,32 0,24 0,8" fill="url(#btnBg)" stroke="#38bdf8" stroke-width="1.2"/>
+      <polygon points="8,0 116,0 125,8 125,24 116,32 8,32 0,24 0,8" fill="url(#btnSpiderBg)" stroke="#00f0ff" stroke-width="1.3"/>
       <path d="M12.8 1.5 L7.8 7.3 L13.8 15.5 H9.8 L5.8 10.1 L1.9 15.5 H0 L5.3 9.3 L-0.4 1.5 H3.6 L7.3 6.6 L10.9 1.5 H12.8 Z" fill="#ffffff" transform="translate(14, 8) scale(0.8)"/>
-      <text x="36" y="20" class="btn-lbl" fill="#38bdf8">TWITTER/X</text>
+      <text x="36" y="20" class="btn-lbl" fill="#00f0ff">TWITTER/X</text>
     </g>
 
-    <!-- Button 4: Email -->
+    <!-- Button 4: Email (Gold) -->
     <g transform="translate(414, 0)">
-      <polygon points="8,0 116,0 125,8 125,24 116,32 8,32 0,24 0,8" fill="url(#btnBg)" stroke="#10b981" stroke-width="1.2"/>
-      <rect x="14" y="9" width="16" height="12" rx="1.5" fill="none" stroke="#10b981" stroke-width="1.4"/>
-      <path d="M 14 10 L 22 16 L 30 10" fill="none" stroke="#10b981" stroke-width="1.4"/>
-      <text x="42" y="20" class="btn-lbl" fill="#10b981">EMAIL</text>
+      <polygon points="8,0 116,0 125,8 125,24 116,32 8,32 0,24 0,8" fill="url(#btnSpiderBg)" stroke="#facc15" stroke-width="1.3"/>
+      <rect x="14" y="9" width="16" height="12" rx="1.5" fill="none" stroke="#facc15" stroke-width="1.4"/>
+      <path d="M 14 10 L 22 16 L 30 10" fill="none" stroke="#facc15" stroke-width="1.4"/>
+      <text x="42" y="20" class="btn-lbl" fill="#facc15">EMAIL</text>
     </g>
   </g>
 </svg>

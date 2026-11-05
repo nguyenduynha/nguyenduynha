@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="./assets/banner-animated.svg" alt="RX-78-2 Gundam Animated Banner" width="100%">
+  <img src="./assets/banner-animated.svg" alt="Spider-Man Animated Banner" width="100%">
 </p>
 
 <p align="center">
-  <code>$ rx-78-2 --mode: AWAKENED · Creative Developer / Mecha UI Engineer _</code>
+  <code>$ peter-parker --suit: STARK_UPGRADE · Creative Web Developer / Spider-Verse UI _</code>
 </p>
 
 ---

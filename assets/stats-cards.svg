@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="100%" height="100%">
   <defs>
     <!-- Dark Card Background -->
-    <linearGradient id="statsCardBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#060c18"/>
-      <stop offset="100%" stop-color="#02050b"/>
+    <linearGradient id="spiderStatsBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1c"/>
+      <stop offset="100%" stop-color="#04060e"/>
     </linearGradient>
 
-    <!-- Sparkline green gradient -->
-    <linearGradient id="statGreen" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" stop-opacity="0.4"/>
-      <stop offset="100%" stop-color="#10b981" stop-opacity="0.0"/>
+    <!-- Sparkline red gradient -->
+    <linearGradient id="statRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e62429" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#e62429" stop-opacity="0.0"/>
     </linearGradient>
 
     <style>
@@ -18,8 +18,8 @@
       .stat-num { font-family: 'Share Tech Mono', monospace; font-weight: bold; font-size: 15px; }
 
       @keyframes circlePulse {
-        0%, 100% { filter: drop-shadow(0 0 3px #10b981); }
-        50% { filter: drop-shadow(0 0 8px #10b981); }
+        0%, 100% { filter: drop-shadow(0 0 3px #e62429); }
+        50% { filter: drop-shadow(0 0 8px #e62429); }
       }
       .gauge-pulse { animation: circlePulse 2.5s ease-in-out infinite; }
 
@@ -31,40 +31,40 @@
     </style>
   </defs>
 
-  <!-- ==================== CARD 1: GITHUB STATS ==================== -->
+  <!-- ==================== CARD 1: HERO STATS ==================== -->
   <g transform="translate(0, 0)">
-    <rect width="170" height="120" rx="6" fill="url(#statsCardBg)" stroke="#10b981" stroke-width="1.2"/>
-    <text x="12" y="20" class="stat-title" fill="#10b981">GITHUB STATS</text>
+    <rect width="170" height="120" rx="6" fill="url(#spiderStatsBg)" stroke="#e62429" stroke-width="1.2"/>
+    <text x="12" y="20" class="stat-title" fill="#ff4455">HERO STATS</text>
 
     <!-- Sparkline activity curve in card 1 -->
-    <path d="M 12 70 Q 28 85, 45 65 T 75 75 T 100 52 L 100 85 L 12 85 Z" fill="url(#statGreen)"/>
-    <path d="M 12 70 Q 28 85, 45 65 T 75 75 T 100 52" fill="none" stroke="#10b981" stroke-width="1.6"/>
+    <path d="M 12 70 Q 28 85, 45 65 T 75 75 T 100 52 L 100 85 L 12 85 Z" fill="url(#statRed)"/>
+    <path d="M 12 70 Q 28 85, 45 65 T 75 75 T 100 52" fill="none" stroke="#e62429" stroke-width="1.6"/>
 
     <!-- Circular Gauge with 97 score -->
     <g transform="translate(132, 60)" class="gauge-pulse">
-      <circle cx="0" cy="0" r="22" fill="#030814" stroke="#1e293b" stroke-width="3"/>
-      <circle cx="0" cy="0" r="22" fill="none" stroke="#10b981" stroke-width="3" stroke-dasharray="120 138" stroke-linecap="round" transform="rotate(-90)"/>
-      <text x="0" y="5" font-family="'Share Tech Mono', monospace" font-size="14" font-weight="900" fill="#10b981" text-anchor="middle">97</text>
+      <circle cx="0" cy="0" r="22" fill="#040712" stroke="#1e293b" stroke-width="3"/>
+      <circle cx="0" cy="0" r="22" fill="none" stroke="#e62429" stroke-width="3" stroke-dasharray="120 138" stroke-linecap="round" transform="rotate(-90)"/>
+      <text x="0" y="5" font-family="'Share Tech Mono', monospace" font-size="14" font-weight="900" fill="#ffffff" text-anchor="middle">97</text>
     </g>
 
-    <text x="12" y="105" class="stat-meta">GRADE: <tspan fill="#10b981" font-weight="bold">A+ OPTIMAL</tspan></text>
+    <text x="12" y="105" class="stat-meta">RATING: <tspan fill="#ff3344" font-weight="bold">A+ OPTIMAL</tspan></text>
   </g>
 
   <!-- ==================== CARD 2: TOP LANGUAGES ==================== -->
   <g transform="translate(178, 0)">
-    <rect width="184" height="120" rx="6" fill="url(#statsCardBg)" stroke="#00f0ff" stroke-width="1.2"/>
-    <text x="12" y="20" class="stat-title" fill="#00f0ff">TOP LANGUAGES</text>
+    <rect width="184" height="120" rx="6" fill="url(#spiderStatsBg)" stroke="#0077fe" stroke-width="1.2"/>
+    <text x="12" y="20" class="stat-title" fill="#38bdf8">TOP LANGUAGES</text>
 
     <!-- Bar Chart -->
     <g transform="translate(12, 34)">
       <!-- Bar 1: TypeScript (Cyan) -->
       <rect x="0" y="20" width="10" height="36" rx="2" fill="#00f0ff" class="pulse-bar"/>
-      <!-- Bar 2: JavaScript (Yellow) -->
-      <rect x="16" y="28" width="10" height="28" rx="2" fill="#facc15"/>
-      <!-- Bar 3: Python (Blue) -->
-      <rect x="32" y="36" width="10" height="20" rx="2" fill="#3b82f6"/>
-      <!-- Bar 4: HTML/CSS (Orange) -->
-      <rect x="48" y="42" width="10" height="14" rx="2" fill="#f97316"/>
+      <!-- Bar 2: JavaScript (Marvel Red) -->
+      <rect x="16" y="26" width="10" height="30" rx="2" fill="#e62429"/>
+      <!-- Bar 3: Python (Stark Blue) -->
+      <rect x="32" y="34" width="10" height="22" rx="2" fill="#0077fe"/>
+      <!-- Bar 4: HTML/CSS (Yellow) -->
+      <rect x="48" y="42" width="10" height="14" rx="2" fill="#facc15"/>
       <!-- Bar 5: Vue (Emerald) -->
       <rect x="64" y="46" width="10" height="10" rx="2" fill="#10b981"/>
       <!-- Bar 6: Others (Purple) -->
@@ -78,38 +78,38 @@
       <circle cx="4" cy="10" r="3" fill="#00f0ff"/>
       <text x="12" y="13" class="stat-meta">TypeScript</text>
 
-      <circle cx="4" cy="24" r="3" fill="#facc15"/>
+      <circle cx="4" cy="24" r="3" fill="#e62429"/>
       <text x="12" y="27" class="stat-meta">JavaScript</text>
 
-      <circle cx="4" cy="38" r="3" fill="#3b82f6"/>
+      <circle cx="4" cy="38" r="3" fill="#0077fe"/>
       <text x="12" y="41" class="stat-meta">Python</text>
 
       <circle cx="4" cy="52" r="3" fill="#10b981"/>
       <text x="12" y="55" class="stat-meta">Vue / CSS</text>
     </g>
 
-    <text x="12" y="105" class="stat-meta">LANGUAGES: <tspan fill="#00f0ff">7 ACTIVE</tspan></text>
+    <text x="12" y="105" class="stat-meta">LANGUAGES: <tspan fill="#38bdf8">7 ACTIVE</tspan></text>
   </g>
 
-  <!-- ==================== CARD 3: COMMIT STREAK ==================== -->
+  <!-- ==================== CARD 3: HERO STREAK ==================== -->
   <g transform="translate(370, 0)">
-    <rect width="170" height="120" rx="6" fill="url(#statsCardBg)" stroke="#d946ef" stroke-width="1.2"/>
-    <text x="12" y="20" class="stat-title" fill="#d946ef">COMMIT STREAK</text>
+    <rect width="170" height="120" rx="6" fill="url(#spiderStatsBg)" stroke="#ff4455" stroke-width="1.2"/>
+    <text x="12" y="20" class="stat-title" fill="#ff4455">HERO STREAK</text>
 
-    <!-- Streak Flame & Ring -->
+    <!-- Spider Emblem & Ring -->
     <g transform="translate(136, 42)">
-      <circle cx="0" cy="0" r="15" fill="none" stroke="#ec4899" stroke-width="2.5" stroke-dasharray="75 95"/>
-      <!-- Flame icon -->
-      <path d="M 0 -8 C 3 -4, 6 -1, 4 4 C 3 7, -3 7, -4 4 C -6 0, -2 -3, 0 -8 Z" fill="#f59e0b"/>
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#e62429" stroke-width="2.5" stroke-dasharray="75 95"/>
+      <!-- Spider mini icon -->
+      <path d="M 0 -6 L 2 -2 L 5 -3 L 3 0 L 5 4 L 2 3 L 0 6 L -2 3 L -5 4 L -3 0 L -5 -3 L -2 -2 Z" fill="#ff3344"/>
     </g>
 
     <!-- Metrics -->
     <g transform="translate(12, 36)">
-      <text x="0" y="16" class="stat-num" fill="#f8fafc">3.92k <tspan font-size="9" fill="#f59e0b">STARS</tspan></text>
+      <text x="0" y="16" class="stat-num" fill="#f8fafc">3.92k <tspan font-size="9" fill="#ff3344">STARS</tspan></text>
       <text x="0" y="36" class="stat-num" fill="#00f0ff">2.45k <tspan font-size="9" fill="#94a3b8">CONTRIBS</tspan></text>
-      <text x="0" y="56" class="stat-num" fill="#ec4899">107 <tspan font-size="9" fill="#94a3b8">REPOS</tspan></text>
+      <text x="0" y="56" class="stat-num" fill="#e62429">107 <tspan font-size="9" fill="#94a3b8">REPOS</tspan></text>
     </g>
 
-    <text x="12" y="105" class="stat-meta">CURRENT: <tspan fill="#f59e0b" font-weight="bold">48 DAYS 🔥</tspan></text>
+    <text x="12" y="105" class="stat-meta">CURRENT: <tspan fill="#ff3344" font-weight="bold">48 DAYS 🕷️</tspan></text>
   </g>
 </svg>

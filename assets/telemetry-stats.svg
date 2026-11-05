@@ -1,30 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 85" width="100%" height="100%">
   <defs>
     <!-- Background card gradient -->
-    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#070c18"/>
-      <stop offset="100%" stop-color="#03060d"/>
+    <linearGradient id="cardSpiderBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#090e1c"/>
+      <stop offset="100%" stop-color="#04060d"/>
     </linearGradient>
 
     <!-- Sparkline Gradients -->
-    <linearGradient id="waveGreen" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#10b981" stop-opacity="0.0"/>
+    <linearGradient id="waveRed" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e62429" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#e62429" stop-opacity="0.0"/>
     </linearGradient>
 
-    <linearGradient id="waveCyan" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="waveStarkBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0077fe" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0077fe" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <linearGradient id="waveSpiderCyan" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.35"/>
       <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.0"/>
     </linearGradient>
 
-    <linearGradient id="waveBlue" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0"/>
-    </linearGradient>
-
-    <linearGradient id="wavePink" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.35"/>
-      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.0"/>
+    <linearGradient id="wavePurple" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d946ef" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#d946ef" stop-opacity="0.0"/>
     </linearGradient>
 
     <style>
@@ -40,55 +40,53 @@
     </style>
   </defs>
 
-  <!-- CARD 1: GREEN (122) -->
+  <!-- CARD 1: MARVEL RED (WEB-FLUID 98%) -->
   <g transform="translate(0, 0)">
-    <rect width="128" height="85" rx="6" fill="url(#cardBg)" stroke="#059669" stroke-width="1.2"/>
-    <!-- Top info -->
-    <text x="10" y="18" class="lbl-val" fill="#10b981">SYS.T1.040</text>
-    <text x="118" y="20" class="num-val" fill="#10b981" text-anchor="end">122<tspan font-size="10" fill="#34d399">▲</tspan></text>
+    <rect width="128" height="85" rx="6" fill="url(#cardSpiderBg)" stroke="#e62429" stroke-width="1.2"/>
+    <text x="10" y="18" class="lbl-val" fill="#ff4455">WEB.FLUID</text>
+    <text x="118" y="20" class="num-val" fill="#ff3344" text-anchor="end">98%<tspan font-size="10" fill="#00f0ff">▲</tspan></text>
     <!-- Waveform Area & Stroke -->
-    <path d="M 10 65 Q 25 55, 40 60 T 70 45 T 95 50 T 118 42 L 118 70 L 10 70 Z" fill="url(#waveGreen)"/>
-    <path d="M 10 65 Q 25 55, 40 60 T 70 45 T 95 50 T 118 42" fill="none" stroke="#10b981" stroke-width="1.6"/>
-    <circle cx="118" cy="42" r="2.5" fill="#34d399" class="dot-anim"/>
-    <!-- Bottom line indicator -->
-    <text x="10" y="78" class="lbl-val">CONTRIBS &gt;&gt;</text>
-    <text x="118" y="78" class="lbl-val" text-anchor="end">09800</text>
+    <path d="M 10 65 Q 25 55, 40 60 T 70 45 T 95 50 T 118 42 L 118 70 L 10 70 Z" fill="url(#waveRed)"/>
+    <path d="M 10 65 Q 25 55, 40 60 T 70 45 T 95 50 T 118 42" fill="none" stroke="#e62429" stroke-width="1.6"/>
+    <circle cx="118" cy="42" r="2.5" fill="#ff3344" class="dot-anim"/>
+    <text x="10" y="78" class="lbl-val">PRESSURE &gt;&gt;</text>
+    <text x="118" y="78" class="lbl-val" text-anchor="end">OPTIMAL</text>
   </g>
 
-  <!-- CARD 2: CYAN (173) -->
+  <!-- CARD 2: STARK BLUE (COMMITS 173) -->
   <g transform="translate(137, 0)">
-    <rect width="128" height="85" rx="6" fill="url(#cardBg)" stroke="#00f0ff" stroke-width="1.2"/>
-    <text x="10" y="18" class="lbl-val" fill="#00f0ff">COMMITS</text>
-    <text x="118" y="20" class="num-val" fill="#00f0ff" text-anchor="end">173</text>
-    <path d="M 10 66 Q 28 62, 45 48 T 80 52 T 102 38 T 118 44 L 118 70 L 10 70 Z" fill="url(#waveCyan)"/>
-    <path d="M 10 66 Q 28 62, 45 48 T 80 52 T 102 38 T 118 44" fill="none" stroke="#00f0ff" stroke-width="1.6"/>
-    <circle cx="118" cy="44" r="2.5" fill="#00f0ff" class="dot-anim"/>
+    <rect width="128" height="85" rx="6" fill="url(#cardSpiderBg)" stroke="#0077fe" stroke-width="1.2"/>
+    <text x="10" y="18" class="lbl-val" fill="#38bdf8">COMMITS</text>
+    <text x="118" y="20" class="num-val" fill="#38bdf8" text-anchor="end">173</text>
+    <path d="M 10 66 Q 28 62, 45 48 T 80 52 T 102 38 T 118 44 L 118 70 L 10 70 Z" fill="url(#waveStarkBlue)"/>
+    <path d="M 10 66 Q 28 62, 45 48 T 80 52 T 102 38 T 118 44" fill="none" stroke="#0077fe" stroke-width="1.6"/>
+    <circle cx="118" cy="44" r="2.5" fill="#38bdf8" class="dot-anim"/>
     <text x="10" y="78" class="lbl-val">ACTIVITY</text>
     <text x="118" y="78" class="lbl-val" text-anchor="end">S0041</text>
   </g>
 
-  <!-- CARD 3: BLUE (113) -->
+  <!-- CARD 3: CYAN (AGILITY 113) -->
   <g transform="translate(274, 0)">
-    <rect width="128" height="85" rx="6" fill="url(#cardBg)" stroke="#38bdf8" stroke-width="1.2"/>
-    <text x="10" y="18" class="lbl-val" fill="#38bdf8">PULL.REQ</text>
-    <text x="118" y="20" class="num-val" fill="#38bdf8" text-anchor="end">113</text>
-    <path d="M 10 62 Q 25 68, 50 56 T 80 48 T 100 58 T 118 46 L 118 70 L 10 70 Z" fill="url(#waveBlue)"/>
-    <path d="M 10 62 Q 25 68, 50 56 T 80 48 T 100 58 T 118 46" fill="none" stroke="#38bdf8" stroke-width="1.6"/>
-    <circle cx="118" cy="46" r="2.5" fill="#38bdf8" class="dot-anim"/>
-    <text x="10" y="78" class="lbl-val">BRANCHES</text>
-    <text x="118" y="78" class="lbl-val" text-anchor="end">B8605</text>
+    <rect width="128" height="85" rx="6" fill="url(#cardSpiderBg)" stroke="#00f0ff" stroke-width="1.2"/>
+    <text x="10" y="18" class="lbl-val" fill="#00f0ff">AGILITY</text>
+    <text x="118" y="20" class="num-val" fill="#00f0ff" text-anchor="end">113</text>
+    <path d="M 10 62 Q 25 68, 50 56 T 80 48 T 100 58 T 118 46 L 118 70 L 10 70 Z" fill="url(#waveSpiderCyan)"/>
+    <path d="M 10 62 Q 25 68, 50 56 T 80 48 T 100 58 T 118 46" fill="none" stroke="#00f0ff" stroke-width="1.6"/>
+    <circle cx="118" cy="46" r="2.5" fill="#00f0ff" class="dot-anim"/>
+    <text x="10" y="78" class="lbl-val">PULL.REQ</text>
+    <text x="118" y="78" class="lbl-val" text-anchor="end">SYNCED</text>
   </g>
 
-  <!-- CARD 4: PINK/PURPLE (18) -->
+  <!-- CARD 4: PURPLE (PROJECTS 18) -->
   <g transform="translate(411, 0)">
-    <rect width="128" height="85" rx="6" fill="url(#cardBg)" stroke="#ec4899" stroke-width="1.2"/>
-    <text x="10" y="18" class="lbl-val" fill="#ec4899">PROJECTS</text>
-    <text x="118" y="20" class="num-val" fill="#ec4899" text-anchor="end">18<tspan font-size="10" fill="#f472b6">★</tspan></text>
+    <rect width="128" height="85" rx="6" fill="url(#cardSpiderBg)" stroke="#d946ef" stroke-width="1.2"/>
+    <text x="10" y="18" class="lbl-val" fill="#d946ef">PROJECTS</text>
+    <text x="118" y="20" class="num-val" fill="#d946ef" text-anchor="end">18<tspan font-size="10" fill="#f472b6">★</tspan></text>
     <!-- Peak spike wave -->
-    <path d="M 10 68 Q 35 68, 60 66 T 85 36 T 102 62 T 118 64 L 118 70 L 10 70 Z" fill="url(#wavePink)"/>
-    <path d="M 10 68 Q 35 68, 60 66 T 85 36 T 102 62 T 118 64" fill="none" stroke="#ec4899" stroke-width="1.6"/>
+    <path d="M 10 68 Q 35 68, 60 66 T 85 36 T 102 62 T 118 64 L 118 70 L 10 70 Z" fill="url(#wavePurple)"/>
+    <path d="M 10 68 Q 35 68, 60 66 T 85 36 T 102 62 T 118 64" fill="none" stroke="#d946ef" stroke-width="1.6"/>
     <circle cx="85" cy="36" r="2.5" fill="#f472b6" class="dot-anim"/>
     <text x="10" y="78" class="lbl-val">RELEASE</text>
-    <text x="118" y="78" class="lbl-val" text-anchor="end">C034RC</text>
+    <text x="118" y="78" class="lbl-val" text-anchor="end">STARK.V2</text>
   </g>
 </svg>

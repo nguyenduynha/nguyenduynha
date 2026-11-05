@@ -2,18 +2,18 @@
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="bgCanvas" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#03070d" />
-      <stop offset="50%" stop-color="#060c17" />
-      <stop offset="100%" stop-color="#02050a" />
+      <stop offset="0%" stop-color="#060914" />
+      <stop offset="50%" stop-color="#0c0b1a" />
+      <stop offset="100%" stop-color="#120814" />
     </linearGradient>
 
     <!-- Rainbow / Holographic Border Gradient for CPU -->
     <linearGradient id="rainbowBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00f2fe" />
-      <stop offset="25%" stop-color="#3b82f6" />
-      <stop offset="50%" stop-color="#a855f7" />
-      <stop offset="75%" stop-color="#ec4899" />
-      <stop offset="100%" stop-color="#eab308" />
+      <stop offset="0%" stop-color="#e62429" />
+      <stop offset="25%" stop-color="#0077fe" />
+      <stop offset="50%" stop-color="#00f0ff" />
+      <stop offset="75%" stop-color="#ff3344" />
+      <stop offset="100%" stop-color="#facc15" />
     </linearGradient>
 
     <!-- Dot Grid Pattern -->
@@ -342,7 +342,7 @@
     <text x="25" y="63" class="label-txt">Docker</text>
   </g>
 
-  <!-- ==================== CỤM 4: TOOLS & DEPLOY (BOTTOM RIGHT - WHITE/CYAN) ==================== -->
+  <!-- ==================== CỤM 4: STARK TOOLS & DEPLOY (BOTTOM RIGHT - WHITE/CYAN) ==================== -->
   <text x="895" y="460" fill="#ffffff" font-size="12" font-weight="900" class="mono-txt" letter-spacing="2">TOOLS & DEPLOY</text>
 
   <!-- Git -->
